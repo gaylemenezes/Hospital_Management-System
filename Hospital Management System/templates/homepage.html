@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CityCare Hospital</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    scroll-behavior: smooth;
+    color: #333;
+  }
+  
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(19, 39, 79, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: default;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    cursor: pointer;
+  }
+  nav ul li a, nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover,
+  nav ul li button:hover {
+    background: #fff;
+    color: #13274F;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('https://storage.googleapis.com/a1aa/image/W4wXrl-rJ7HO-M61MmpnKB_uJZfJKBf1pyW2Awu9GwQ.jpg') no-repeat center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(19,39,79,0.3);
+    z-index: 1;
+  }
+    
+  .hero-content {
+    position: relative;
+    color: white;
+    max-width: 700px;
+    padding: 0 20px;
+    z-index: 2;
+  }
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  .hero-content button {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    color: white;
+  }
+  .hero-content button:hover {
+    background-color: #ff3b3b;
+  }
+
+  .about {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .about img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(19,39,79,0.15);
+  }
+  .about-text {
+    flex: 1;
+  }
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #13274F;
+  }
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  .highlight {
+    font-weight: 600;
+    color: #13274F;
+  }
+
+  .contact {
+    background: #13274F;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .contact .icons {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contact .icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .contact .icons a:hover {
+    color: #ff6b6b;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-text {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">CityCare Hospital</div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+    <li><button onclick="window.location.href='/login'">Login</button></li>
+  </ul>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Welcome to CityCare Hospital</h1>
+    <p>Leading healthcare with compassion and innovation since 1955.</p>
+    <!--<button onclick="window.location.href='/book-appointment'">Book Appointment</button> -->
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img src="https://5.imimg.com/data5/SE/EC/GLADMIN-8607849/care-hospital-at-hyderabad.jpg" alt="Hospital Image" />
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p><span class="highlight">CityCare Hospital</span> was founded in 1955 with the mission to provide quality and affordable healthcare. From a small 50-bed facility, we’ve grown into a 1000+ bed multidisciplinary institute serving millions each year.</p>
+    <p>We lead in robotic surgery, organ transplantation, and AI-based diagnostics, with world-class specialists and infrastructure.</p>
+    <p><strong>We care. We cure. We commit.</strong></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@citycarehospital.com | Phone: +91-9876543210</p>
+  <div class="icons">
+    <a href="mailto:contact@citycarehospital.com" title="Email">&#9993;</a>
+    <a href="tel:+919876543210" title="Call">&#9742;</a>
+
+  </div>
+</section>
+<a href="{{ url_for('chatbot') }}" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://gimgs2.nohat.cc/thumb/f/640/svg-chatbot-icon--freesvgorg133669.jpg" alt="Chatbot" style="width: 60px; height: 60px;">
+</a>
+
+
+</body>
+</html>

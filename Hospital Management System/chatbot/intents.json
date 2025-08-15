@@ -1,0 +1,32 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Good Morning", "Hey", "Good Afternoon", "Good Evening", "Good Night"],
+            "responses": ["Hello, how can I asist you?", "Hi there! Need Help?", "Hi! Welcome to CityCare.How may I help you?"]
+        
+        },
+        {
+            "tag":"hospital_hours",
+            "patterns":["What are your timings?", "What are the opening hours?", "When is the hospital open?"],
+            "responses": ["We are open from 9 AM to 9 PM, Monday to Saturday."]
+    
+        },
+        {
+            "tag": "appointment",
+            "patterns": ["Book appointment", "Schedule doctor visit", "I want to see a doctor"],
+            "responses": ["Sure, go to the Appointments tab or let me know the doctor's name."]
+        },
+        {
+            "tag":"doctors",
+            "patterns":["Which doctors are available?", "Name of the specialists?", "What are the doctors available?"],
+            "responses": ["Cardiologist, Dermatologist, Neurologist, Gynaecologist, Orthologist"]
+    
+        }
+        {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later"],
+      "responses": ["Take care! Hope you feel better soon."]
+    }
+    ]
+}

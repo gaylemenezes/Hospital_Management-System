@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f7fa;
+            padding-top: 80px;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-title {
+            color: #13274F;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #13274F;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0f1d3c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container mt-5">
+            <h2 class="form-title">Add Report for Patient {{ patient_name }}</h2>
+            <form method="POST">
+                <div class="mb-3">
+                    <label for="report_title" class="form-label">Report Title</label>
+                    <input type="text" class="form-control" id="report_title" name="report_title" required>
+                </div>
+                 <div class="mb-3">
+                    <label for="chief_complaint" class="form-label">Chief Comaplaint</label>
+                    <textarea class="form-control" id="chief_complaint" name="chief_complaint" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="medical_history" class="form-label">Medical History</label>
+                    <textarea class="form-control" id="medical_history" name="medical_history" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="examination" class="form-label">Examination</label>
+                    <textarea class="form-control" id="examination" name="examination" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="diagnosis" class="form-label">Diagnosis</label>
+                    <textarea class="form-control" id="diagnosis" name="diagnosis" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="treatment" class="form-label">Treatment</label>
+                    <textarea class="form-control" id="treatment" name="treatment" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="remarks" class="form-label">Remarks</label>
+                    <textarea class="form-control" id="remarks" name="remarks" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-custom">Submit Report</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
