@@ -22,11 +22,11 @@
             "patterns":["Which doctors are available?", "Name of the specialists?", "What are the doctors available?"],
             "responses": ["Cardiologist, Dermatologist, Neurologist, Gynaecologist, Orthologist"]
     
-        }
+        },
         {
-      "tag": "goodbye",
-      "patterns": ["Bye", "Goodbye", "See you later"],
-      "responses": ["Take care! Hope you feel better soon."]
-    }
+            "tag": "goodbye",
+            "patterns": ["Bye", "Goodbye", "See you later"],
+            "responses": ["Take care! Hope you feel better soon."]
+        }
     ]
 }
