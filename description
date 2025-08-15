@@ -1,0 +1,1 @@
+A Flask-based hospital management system integrated with an NLP-powered chatbot for appointment scheduling, patient assistance, and general hospital queries. Features include role-based dashboards for doctors, patients, and staff, medical report management, and a user-friendly interface connected to a MySQL database.
